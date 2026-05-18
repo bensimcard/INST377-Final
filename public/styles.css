@@ -1,0 +1,117 @@
+:root {
+  --primary-color: rgb(93, 93, 212);
+  --secondary-color: rgb(94, 93, 93);
+  --accent-color: rgb(238, 129, 41);
+  --background-color: rgb(243, 240, 240);
+  --card-background: white;
+  --text-color: rgb(90, 89, 89);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 15px;
+}
+
+h2, h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+  max-width: 600px;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#saveBtn {
+  background-color: var(--accent-color);
+}
+
+#imageContainer {
+  background: var(--card-background);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px black;
+  margin: 20px 0;
+}
+
+#dogDisplay {
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+hr {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px 0;
+  border: 0;
+  height: 1px;
+  background: white;
+}
+
+#favoritesCarousel {
+  width: 100%;
+  max-width: 600px;
+}
+
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card-background);
+  padding: 10px;
+  border-radius: 8px;
+}

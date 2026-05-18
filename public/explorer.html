@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <title>Breed Explorer - App Panel</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <a href="/">Home</a> | <a href="explorer.html">Breed Explorer</a> | <a href="about.html">About</a>
+  </nav>
+
+  <h2>Explore Dog Breeds</h2>
+  
+  <select id="breedDropdown"></select>
+
+  <div>
+    <button id="viewBtn">New Photo of this Breed</button>
+    <button id="saveBtn">Save to Favorites</button>
+  </div>
+
+  <div id="imageContainer">
+    <img id="dogDisplay" src="https://cdn-icons-png.flaticon.com/512/194/194279.png" alt="Selected Breed Photo">
+  </div>
+
+  <hr>
+
+  <h3>Your Saved Favorites</h3>
+  <div id="favoritesCarousel" class="splide">
+    <div class="splide__track">
+      <ul class="splide__list" id="carouselList">
+        </ul>
+    </div>
+  </div>
+</body>
+
+</html>
